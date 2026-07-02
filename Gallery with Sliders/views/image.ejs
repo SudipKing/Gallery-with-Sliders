@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <%- include('partials/navbar') %>
+
+  <div class="max-w-4xl mx-auto py-10 px-4">
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="<%= image.image %>" class="w-full h-96 object-cover" />
+      <div class="p-6">
+        <h1 class="text-3xl font-bold"><%= image.title %></h1>
+        <p class="text-gray-600"><%= image.description %></p>
+        <a href="/gallery" class="inline-block mt-4 bg-gray-800 text-white px-4 py-2 rounded">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
